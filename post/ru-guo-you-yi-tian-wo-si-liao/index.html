@@ -112,7 +112,8 @@
     function getCalendar(){
         let nowTime = getTime();
         let calDay = new Date(nowTime.year, nowTime.month+1, 0).getDate();
-
+        let bgf = document.getElementById("bg");
+        bgf.innerHTML=nowTime.month+1;
         let ca = document.getElementById('cal-content');
         blank(nowTime.blank);
         for (let i = 1; i <= calDay; i++) {
@@ -189,6 +190,64 @@
                     
                                 <!-- id-card -->
                                 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #cal {
+            width: 220px;
+            height: 200px;
+            background-color: #ffffff;
+            border-radius: 14px;
+            border: 1px solid #faf0f0;
+            box-shadow:  10px 10px 10px #888888;
+            vertical-align:text-bottom;
+            position: relative;
+        }
+
+        .cal-head {
+            height: 30px;
+            background-color: rgb(211, 234, 255);
+            border-radius: 10px 10px 0 0;
+        }
+
+        span {
+            display: inline-block;
+            width: 27px;
+            height: 20px;
+            text-align: center;
+            padding-top: 5px;
+        }
+
+        
+
+        #cal-content span {
+            width: 31px;
+            height: 32px;
+            /* line-height: 10px; */
+            vertical-align:text-bottom;
+        }
+        .wtf{
+            top: 10px;
+            border-radius: 10px;
+            background-color: #85e1f8;
+        }
+        #cal-content{
+            position: absolute;
+
+        }
+
+        #bg {
+            /* z-index: -1; */
+            position: absolute;
+            font-size: 175px;
+            color: rgba(190, 196, 194, 0.719);
+        }
+    </style>
+
+
     <div class="id_card i-card">
         <div class="id_card-avatar"
             style="background-image: url(https://wtf2503687.github.io/images/avatar.png?v=1608104535468)">
@@ -225,6 +284,7 @@
     </div>
     <div class="id_card i-card">
         <div id="cal">
+            <div id="bg"></div>
             <div class="cal-head">
                 <span>一</span>
                 <span>二</span>

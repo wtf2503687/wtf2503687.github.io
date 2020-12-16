@@ -111,7 +111,8 @@
     function getCalendar(){
         let nowTime = getTime();
         let calDay = new Date(nowTime.year, nowTime.month+1, 0).getDate();
-
+        let bgf = document.getElementById("bg");
+        bgf.innerHTML=nowTime.month+1;
         let ca = document.getElementById('cal-content');
         blank(nowTime.blank);
         for (let i = 1; i <= calDay; i++) {
