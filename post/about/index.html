@@ -7,7 +7,7 @@
 <title>
     关于 | WT F**K
 </title>
-<link rel="shortcut icon" href="https://wtf2503687.github.io/favicon.ico?v=1608104535468">
+<link rel="shortcut icon" href="https://wtf2503687.github.io/favicon.ico?v=1617026627029">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
 <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
@@ -18,7 +18,6 @@
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 <script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
-
         
 </head>
 
@@ -28,7 +27,7 @@
     <div class="nav">
         <div class="logo">
             <a href="https://wtf2503687.github.io">
-                <img class="avatar" src="https://wtf2503687.github.io/images/avatar.png?v=1608104535468" alt="">
+                <img class="avatar" src="https://wtf2503687.github.io/images/avatar.png?v=1617026627029" alt="">
             </a>
             <div class="site-title">
                 <h1>
@@ -36,43 +35,43 @@
                 </h1>
             </div>
         </div>
-        
+
         <span class="menu-btn fa fa-align-justify"></span>
         <div class="menu-container">
             <ul>
                 
-                
-                <li>
-                    <a href="/" class="menu">
-                        首页
-                    </a>
-                </li>
-                
-                
-                
-                <li>
-                    <a href="/archives" class="menu">
-                        归档
-                    </a>
-                </li>
-                
-                
-                
-                <li>
-                    <a href="/tags" class="menu">
-                        标签
-                    </a>
-                </li>
-                
-                
-                
-                <li>
-                    <a href="/post/about" class="menu">
-                        关于
-                    </a>
-                </li>
-                
-                
+                    
+                            <li>
+                                <a href="/" class="menu">
+                                    首页
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/archives" class="menu">
+                                    归档
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/tags" class="menu">
+                                    标签
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/post/about" class="menu">
+                                    关于
+                                </a>
+                            </li>
+                            
+                                
             </ul>
         </div>
     </div>
@@ -97,29 +96,32 @@
     });
     function fuckTime() {
         let nowtime = new Date();
-        let endtime = new Date("2021/01/01,00:00:00");
+        let nextYear = nowtime.getFullYear() + 1 + "/01/01,00:00:00";
+
+        // let endtime = new Date("2022/01/01,00:00:00");
+        let endtime = new Date(nextYear);
         let newyear = new Date("2021/02/12,00:00:00");
         let lefttime = parseInt(endtime.getTime() - nowtime.getTime());
         let yeartime = parseInt(newyear.getTime() - nowtime.getTime());
         let wtf = parseInt(lefttime / (1000 * 24 * 60 * 60));
-        let wft_1=parseInt(yeartime / (1000 * 24 * 60 * 60));
+        let wft_1 = parseInt(yeartime / (1000 * 24 * 60 * 60));
         $('#wtf').text(wtf);
         $('#wtf_1').text(wft_1);
         console.log(wtf);
         console.log(wft_1);
     }
 
-    function getCalendar(){
+    function getCalendar() {
         let nowTime = getTime();
-        let calDay = new Date(nowTime.year, nowTime.month+1, 0).getDate();
+        let calDay = new Date(nowTime.year, nowTime.month + 1, 0).getDate();
         let bgf = document.getElementById("bg");
-        bgf.innerHTML=nowTime.month+1;
+        bgf.innerHTML = nowTime.month + 1;
         let ca = document.getElementById('cal-content');
         blank(nowTime.blank);
         for (let i = 1; i <= calDay; i++) {
             let ne = document.createElement("span")
-            if(i==nowTime.nowDay){
-                ne.setAttribute('class','wtf');
+            if (i == nowTime.nowDay) {
+                ne.setAttribute('class', 'wtf');
             }
             ne.innerHTML = i;
             ca.appendChild(ne);
