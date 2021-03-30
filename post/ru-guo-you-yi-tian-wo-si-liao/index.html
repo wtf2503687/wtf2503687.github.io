@@ -7,7 +7,7 @@
 <title>
     如果有一天我死了 | WT F**K
 </title>
-<link rel="shortcut icon" href="https://wtf2503687.github.io/favicon.ico?v=1617026627029">
+<link rel="shortcut icon" href="https://wtf2503687.github.io/favicon.ico?v=1617112795745">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
 <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
@@ -27,7 +27,7 @@
     <div class="nav">
         <div class="logo">
             <a href="https://wtf2503687.github.io">
-                <img class="avatar" src="https://wtf2503687.github.io/images/avatar.png?v=1617026627029" alt="">
+                <img class="avatar" src="https://wtf2503687.github.io/images/avatar.png?v=1617112795745" alt="">
             </a>
             <div class="site-title">
                 <h1>
@@ -100,13 +100,14 @@
 
         // let endtime = new Date("2022/01/01,00:00:00");
         let endtime = new Date(nextYear);
-        let newyear = new Date("2021/02/12,00:00:00");
+        let newyear = new Date("2026/09/23,00:00:00");
         let lefttime = parseInt(endtime.getTime() - nowtime.getTime());
         let yeartime = parseInt(newyear.getTime() - nowtime.getTime());
         let wtf = parseInt(lefttime / (1000 * 24 * 60 * 60));
         let wft_1 = parseInt(yeartime / (1000 * 24 * 60 * 60));
         $('#wtf').text(wtf);
         $('#wtf_1').text(wft_1);
+        $('#wtf_2').text(Math.floor(wft_1 / 365) + "年" + Math.floor(wft_1 % 365 / 30) + "月" + wft_1 % 365 % 30 + "日");
         console.log(wtf);
         console.log(wft_1);
     }
@@ -256,7 +257,7 @@
 
     <div class="id_card i-card">
         <div class="id_card-avatar"
-            style="background-image: url(https://wtf2503687.github.io/images/avatar.png?v=1617026627029)">
+            style="background-image: url(https://wtf2503687.github.io/images/avatar.png?v=1617112795745)">
         </div>
         <h1 class="id_card-title">
             WT F**K
@@ -283,7 +284,9 @@
         </h1>
         <h2 class="id_card-description" style="font-size: 18px;">
             <p>距离2021年(1.1)：<span id="wtf" style="color: #005588;"></span></p>
-            <p>距离过年(2.11)：<span id="wtf_1" style="color: rgb(255, 0, 106);"></span></p>
+            <p>30：<span id="wtf_1" style="color: #000;width: 60px;"></span>天</p>
+            <p><span id="wtf_2" style="color: #000;width: 120px;"></span></p>
+
 
         </h2>
         <!--  -->
