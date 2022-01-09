@@ -2,14 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wtf2503687.github.io</id>
     <title>WT F**K</title>
-    <updated>2021-03-30T14:24:59.328Z</updated>
+    <updated>2022-01-09T14:18:41.276Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wtf2503687.github.io"/>
     <link rel="self" href="https://wtf2503687.github.io/atom.xml"/>
     <subtitle>然鹅并没有什么卵用</subtitle>
     <logo>https://wtf2503687.github.io/images/avatar.png</logo>
     <icon>https://wtf2503687.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, WT F**K</rights>
+    <rights>All rights reserved 2022, WT F**K</rights>
+    <entry>
+        <title type="html"><![CDATA[又一年要过去了...]]></title>
+        <id>https://wtf2503687.github.io/post/you-yi-nian-yao-guo-qu-liao/</id>
+        <link href="https://wtf2503687.github.io/post/you-yi-nian-yao-guo-qu-liao/">
+        </link>
+        <updated>2021-10-09T15:17:46.000Z</updated>
+        <summary type="html"><![CDATA[<p>啊. 时间过的好快呀，距离我上次搞这个页面已经过去很长时间了， 这一年好像并没有什么特别的改变，已经快到冬天了，这是第3个冬天了，还能回忆起来以前冬天时候的画面，希望明年能够快乐一些</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>啊. 时间过的好快呀，距离我上次搞这个页面已经过去很长时间了， 这一年好像并没有什么特别的改变，已经快到冬天了，这是第3个冬天了，还能回忆起来以前冬天时候的画面，希望明年能够快乐一些</p>
+<!-- more -->
+<p>不得不说，粉轴还是很好用的，pbt键帽的手感也很出色，还有83天就到22年了，少些抱怨，多些努力吧。</p>
+<p>有时候想把一些有意思，或者值得记录的东西，写下来。但是到了写的时候又好像失去了兴趣</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=497769792&auto=1&height=66"></iframe>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[1]]></title>
         <id>https://wtf2503687.github.io/post/1/</id>
